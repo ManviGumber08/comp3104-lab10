@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+lab Exercise 10 
+📜 Overview
+This project demonstrates the implementation of React Redux, JWT (JSON Web Token), and routing using React Router v6 concepts. It includes login functionality, Redux state management, JWT token simulation for login, and routing to manage login/logout processes.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🛠️ Technologies Used
+ReactJS (v18+)
+Redux Toolkit
+React Router v6
+JWT Token Simulation
+Redux State Management
+Node.js environment
+CSS for UI
+🚀 Features
+✅ Login and Logout with JWT Simulation
+✅ State Management with Redux
+✅ JWT token generation simulation on login
+✅ Redirect to the dashboard upon login success
+✅ Return to the login page upon logout
+✅ Simple routing with React Router v6
+🏗️ Project Structure
+The application follows this directory structure:
 
-## Available Scripts
+bash
+Copy code
+/src
+  /components
+    - LoginForm.js
+    - Dashboard.js
+  /redux
+    - authSlice.js
+  /jwt
+    - jwtUtils.js
+  /App.js
+  /index.js
+🖥️ How to Install and Run
+1. Clone the repository:
+bash
+Copy code
+git clone <https://github.com/ManviGumber08/comp3104-lab10
+2. Navigate to the project directory:
+bash
+Copy code
+cd >redux-jwt-demo
+3. Install dependencies:
+bash
+Copy code
+npm install
+4. Start the application:
+bash
+Copy code
+npm start
+5. Open the application in your browser:
+The app will be accessible at:
 
-In the project directory, you can run:
+arduino
+Copy code
+http://localhost:3000
+📜 How to Use
+Login:
 
-### `npm start`
+Enter any credentials in the provided form.
+Click Login, and you will be redirected to the Dashboard page.
+Dashboard:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You will land on the Dashboard page upon successful login.
+Click Logout to end your session.
+Logout:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clicking the logout button will redirect you back to the Login page.
+⚙️ Technical Details
+Redux Toolkit: Manages user authentication states (logged in or logged out).
+JWT Token: Simulated JWT token generation using the jwtUtils utility.
+React Router v6: Handles routing for navigating between the Login and Dashboard pages.
+Redux Actions and Reducers: Handles dispatch logic for login/logout.
+📂 Dependencies
+Required Dependencies:
+bash
+Copy code
+npm install react-redux @reduxjs/toolkit react-router-dom jwt-decode
+📷 Screenshots
+1. Login Page
+![alt text](<Screenshot 2024-12-08 165513.png>) 
+2. Dashboard
+![alt text](<Screenshot 2024-12-08 165541.png>) 
+3. Loagin page with no credidentials
+![alt text](<Screenshot 2024-12-08 165522.png>)
 
-### `npm test`
+🏆 Next Steps
+Here are your next steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Deploy the Project:
 
-### `npm run build`
+Deploy this application on platforms like Vercel or Netlify.
+Implement a Real JWT Token Backend:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Replace the token simulation with actual JWT authentication logic using a backend server (Node.js, Express, etc.).
+Add Protected Routes:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Use route guards to prevent non-logged-in users from accessing certain routes.
+Expand Features:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Integrate user registration and authentication.
+Add user profile features or analytics to the dashboard.
+Improve UI/UX:
 
-### `npm run eject`
+Enhance the design with libraries like Material-UI or TailwindCSS.
+Create Unit Tests:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Write unit tests using Jest or React Testing Library for Redux actions and React components.
+🛡️ Contributing
+If you’d like to contribute to this repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Fork the repository.
+Create a new branch (git checkout -b feature/new-feature-name).
+Commit your changes.
+Submit a pull request with clear documentation about the changes.
+📧 Contact
+For feedback or questions:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Email: 101412099@georgebrown.ca
+GitHub: https://github.com/ManviGumber08
